@@ -32,7 +32,7 @@ d3.json(
   }
 );
 
-var data1 = [
+var data = [
   { year: 1991, name: 'alpha', value: 15 },
   { year: 1992, name: 'alpha', value: 34 },
   { year: 1991, name: 'alpha2', value: 17 },
@@ -51,11 +51,11 @@ var data1 = [
   { year: 1992, name: 'delta2', value: 35 },
 ];
 
-var visualization2 = d3plus
+var visualization = d3plus
   .viz()
   .container('#viz3')
-  .data(data1)
-  .type('bar')
+  .data(data)
+  .type('box')
   .id('name')
   .x('year')
   .y('value')
